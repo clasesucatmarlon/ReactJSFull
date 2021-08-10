@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReactJs CDN</title>
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+  
+  <script type="text/babel">
+
+  const Saludar = () => {
+    return (
+      <>
+        <h1>Hola marlon</h1>
+        <p>Cómo estás</p>
+      </>
+    )
+  }
+
+  const Interpolar = () => {
+    const nombre = 'leidy '
+    return (
+      <>
+        <h1>Interpolar</h1>
+        <hr/>
+        <h3>Hola {nombre}</h3>
+      </>
+    )
+  }
+
+  // const Numero = () => {
+  //   const [numero, setNumero] = React.useState(0);
+  //   console.log(numero);
+  //   setInterval(() => {
+  //     setNumero(numero + 1)
+  //   }, 10000);
+
+    return (
+      <h5>Número: {numero}</h5>
+    )
+  }
+
+
+    // Argumentos: primero----> Qué
+    //             Segundo----> Dónde
+    ReactDOM.render(
+      <Numero />,
+      document.getElementById('root')
+    );
+  </script>
+
+
+</body>
+</html>
